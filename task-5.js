@@ -26,9 +26,7 @@ class Car {
 
     turnOff() {
         this.isOn = false
-        if (this.isOn === false) {
-            this.speed = 0
-        }
+        this.speed = 0
   }
 
     accelerate(value) {
@@ -36,7 +34,7 @@ class Car {
         if (this.speed <= this.maxSpeed) {
             return this.speed
         }
-        return this.speed -= value
+        return this.speed = this.maxSpeed
   }
 
 
@@ -45,7 +43,7 @@ class Car {
         if (this.speed >= 0) {
             return this.speed
         }
-        return this.speed += value
+        return this.speed = 0 
   }
 
 

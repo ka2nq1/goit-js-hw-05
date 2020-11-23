@@ -7,21 +7,17 @@ class StringBuilder {
         return this._value
     }
 
-    set value(value) {
-        this._value = value
-    }
-
     append(str) {
-        this.value += str
+        this._value += str
     }
 
     prepend(str) {
-        this.value = str + this.value
+        this._value = str + this._value
     }
 
     pad(str) {
-        this.value += str
-        this.value = str + this.value
+        this._value += str
+        this._value = str + this._value
     }
 
 }
