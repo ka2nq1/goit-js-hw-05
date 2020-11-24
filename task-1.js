@@ -22,3 +22,4 @@ const mango = new Account({
 mango.getInfo();
 
 console.log(Account.prototype.getInfo); 
+
